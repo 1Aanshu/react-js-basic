@@ -67,5 +67,62 @@
       <source src="https://www.w3schools.com/html/movie.ogg" type="video/ogg" />
       Your browser does not support the video tag.
     </video>
+    <form>
+      <label>Name</label>
+      <input type="text" /><br />
+      <label>Password</label>
+      <input type="password" /><br />
+      <label>Email</label>
+      <input type="email" /><br />
+      <label>Date</label>
+      <input type="date" /><br />
+      <label>Age</label>
+      <input
+        id="age"
+        type="range"
+        min="0"
+        max="10"
+        value="0"
+        onchange="getSlider()"
+      />
+      <!--oninput="rangeVal.innerHTML=this.value"-->
+      <label id="rangeVal">0</label><br />
+      <label>Gender</label>
+      <input
+        class="gender"
+        type="radio"
+        name="gender"
+        value="m"
+        onclick="getGender()"
+      />
+      <label>Male</label>
+      <input
+        class="gender"
+        type="radio"
+        name="gender"
+        value="f"
+        onclick="getGender()"
+      />
+      <label>Female</label>
+      <input
+        class="gender"
+        type="radio"
+        name="gender"
+        value="o"
+        onclick="getGender()"
+      />
+      <label>Other</label><br />
+      <hr />
+      <label id="gender">Gender Value</label><br />
+      <hr />
+      <label>Drink</label>
+      <input type="checkbox" name="drink" value="tea" />
+      <label>Tea</label>
+      <input type="checkbox" name="drink" value="coffee" />
+      <label>Coffee</label><br />
+      <label>Upload CV</label>
+      <input type="file" /><br />
+    </form>
+    <script src="index.js"></script>
   </body>
 </html>
