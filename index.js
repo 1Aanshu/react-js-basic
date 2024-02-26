@@ -16,3 +16,8 @@ const getGender = () => {
   }
   document.getElementById("gender").innerHTML = answer;
 };
+
+const getName = () => {
+  const val = document.querySelector('input[name="name"]').value;
+  document.getElementById("nameVal").innerHTML = val;
+};
