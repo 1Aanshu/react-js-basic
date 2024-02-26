@@ -126,6 +126,53 @@
       <label>Upload CV</label>
       <input type="file" /><br />
     </form>
+    <br />
+
+    <form id="contactUs" onsubmit="getForm(); return false">
+      <label>Name</label>
+      <input placeholder="John Doe" name="name" required />
+      <br />
+      <label>Gender</label>
+      <input class="gender" type="radio" name="gender" value="m" />
+      <label>Male</label>
+      <input class="gender" type="radio" name="gender" value="f" />
+      <label>Female</label>
+      <input class="gender" type="radio" name="gender" value="o" />
+      <label>Other</label><br />
+      <label>Email</label>
+      <input placeholder="JohnDoe@mail.com" name="email" required />
+      <br />
+      <label>Message</label>
+      <textarea rows="5" placeholder="Your Message" name="message"></textarea>
+      <br />
+      <label>Upload CV</label>
+      <input type="file" name="file" /><br />
+      <button type="submit" value="save">Submit Me</button>
+    </form>
+    <br />
+
+    <form id="contactUs1">
+      <label>Name</label>
+      <input placeholder="John Doe" name="name" required />
+      <br />
+      <label>Gender</label>
+      <input class="gender" type="radio" name="gender" value="m" />
+      <label>Male</label>
+      <input class="gender" type="radio" name="gender" value="f" />
+      <label>Female</label>
+      <input class="gender" type="radio" name="gender" value="o" />
+      <label>Other</label><br />
+      <label>Email</label>
+      <input placeholder="JohnDoe@mail.com" name="email" required />
+      <br />
+      <label>Message</label>
+      <textarea rows="5" placeholder="Your Message" name="message"></textarea>
+      <br />
+      <label>Upload CV</label>
+      <input type="file" name="file" /><br />
+      <button type="submit" id="formBtn">Submit Me</button>
+    </form>
+
     <script src="index.js"></script>
   </body>
 </html>

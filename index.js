@@ -21,3 +21,29 @@ const getName = () => {
   const val = document.querySelector('input[name="name"]').value;
   document.getElementById("nameVal").innerHTML = val;
 };
+
+const getForm = () => {
+  const form = document.getElementById("contactUs");
+  const formData = new FormData(form);
+  const obj = {};
+  formData.forEach((val, key) => {
+    obj[key] = val;
+  });
+  console.log(obj);
+  // for (const [key, value] of formData) {
+  //   console.log(`${key}: ${value}\n`);
+  // }
+};
+
+const btn = document.getElementById("formBtn");
+
+btn.addEventListener("click", (e) => {
+  e.preventDefault();
+  const form = document.getElementById("contactUs1");
+  const formData = new FormData(form);
+  const obj = {};
+  formData.forEach((val, key) => {
+    obj[key] = val;
+  });
+  console.log({ 1: obj });
+});
