@@ -3,8 +3,14 @@
 // import viteLogo from '/vite.svg'
 // import './App.css'
 
+import States from "./components/States";
+
 const App = () => {
-  return <>Hello world</>;
+  return (
+    <>
+      <States />
+    </>
+  );
   // const [count, setCount] = useState(0)
 
   // return (
